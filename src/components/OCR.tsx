@@ -8,27 +8,49 @@ export default function OCR() {
   const [result, setResult] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
 
+  const fileToBase64 = (file: File): Promise<string> => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const base64String = (reader.result as string).split(',')[1]; // remove "data:image/png;base64,"
+        resolve(base64String);
+      };
+      reader.onerror = (error) => reject(error);
+      reader.readAsDataURL(file);
+    });
+  };
+
   const handleUpload = async () => {
-    if (!file1 || !file2) return alert('กรุณาอัปโหลดรูปภาพทั้ง 2 ไฟล์');
+    if (!file1 || !file2) {
+      alert('กรุณาอัปโหลดรูปภาพทั้ง 2 ไฟล์');
+      return;
+    }
 
     setLoading(true);
     const files = [file1, file2];
     let textResults = '';
 
-    for (let file of files) {
-      const formData = new FormData();
-      formData.append('file', file);
+    for (let i = 0; i < files.length; i++) {
+      const base64 = await fileToBase64(files[i]);
 
       try {
         const res = await fetch('/api/typhoon-ocr', {
           method: 'POST',
-          body: formData,
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            imageBase64: base64,
+            anchorText: 'Sample anchor text from frontend',
+            taskType: 'default',
+          }),
         });
 
         const data = await res.json();
-        textResults += `\n\n--- File ---\n${data.result || 'ไม่พบข้อความ'}`;
+        console.log("OCR Response:", data); 
+        textResults += `\n\n--- ไฟล์ที่ ${i + 1} ---\n${data?.choices?.[0]?.message?.content || 'ไม่พบข้อความ'}`;
       } catch (err: any) {
-        textResults += `\n\n--- Error ---\n${err.message}`;
+        textResults += `\n\n--- ข้อผิดพลาดที่ไฟล์ ${i + 1} ---\n${err.message}`;
       }
     }
 
