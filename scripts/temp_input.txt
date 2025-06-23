@@ -1,0 +1,68 @@
+บริษัท วิศวกรรมธรณีและฐานราก จำกัด
+
+Payment Journal
+
+Date Printed: 09/04/25 13:25:28
+User: NIYADA_K
+Page: Page : 1
+
+Document No. PPV25040031
+
+Pay to คุณสมเกียรติ จิตตประเสริฐ
+
+Batch No. PV25040031
+
+By:
+- CASH
+- Transfer
+- Credit
+
+Check/ Draft
+Check No
+
+Check Date
+
+Ex. Doc No.
+
+Bank ธ.กสิกรไทย (LP25) #0451123874
+
+Branch ลาดพร้าว 25
+
+Currency
+
+Rate
+
+Batch Description คืนเงิน คชจ.ส่วนเกิน ADV.
+
+| Line No. | Account Code | Description | Debit | Credit |
+|----------|---------------|-------------|-------|---------|
+| 1        | 2154100       | ค่าใช้จ่ายโครงการค้างจ่าย | คืนเงิน คชจ.ส่วนเกิน ADV. AP25030154 | 57,013.39 |
+|          |               | Business Unit: GFE = GFE, CASH FLOW: 1206 = ค่าใช้จ่ายทางตรงอื่น, PROJECT GL CODE: P06468 = Instrumentation เงื่อนไขชั่น PFO: 01E2724 |       |
+| 2        | 2111104       | ธ.กสิกรไทย (O/D) | คืนเงิน คชจ.ส่วนเกิน ADV. AP25030154 | 57,013.30 |
+|          |               | Business Unit: GFE = GFE, CASH FLOW: 1206 = ค่าใช้จ่ายทางตรงอื่น, PROJECT GL CODE: P06468 = Instrumentation เงื่อนไขชั่น PFO: 01E2724 |       |
+| 3        | 2154100       | ค่าใช้จ่ายโครงการค้างจ่าย | คืนเงิน คชจ.ส่วนเกิน ADV. AP25030180 | 19,822.25 |
+|          |               | Business Unit: GFE = GFE, CASH FLOW: 1206 = ค่าใช้จ่ายทางตรงอื่น, PROJECT GL CODE: P06472 = Instrumentation เงื่อนไขแล้ง PFO: 01E0909 |       |
+| 4        | 2111104       | ธ.กสิกรไทย (O/D) | คืนเงิน คชจ.ส่วนเกิน ADV. AP25030180 | 19,822.25 |
+|          |               | Business Unit: GFE = GFE, CASH FLOW: 1206 = ค่าใช้จ่ายทางตรงอื่น, PROJECT GL CODE: P06472 = Instrumentation เงื่อนไขแล้ง PFO: 01E0909 |       |
+| 5        | 2154100       | ค่าใช้จ่ายโครงการค้างจ่าย | คืนเงิน คชจ.ส่วนเกิน ADV. AP25030189 | 51,972.56 |
+|          |               | Business Unit: GFE = GFE, CASH FLOW: 1206 = ค่าใช้จ่ายทางตรงอื่น, PROJECT GL CODE: P06471 = Instrumentation เงื่อนไขเชิงไตรตอนล่าง PFO: 01E3142 |       |
+| 6        | 2111104       | ธ.กสิกรไทย (O/D) | คืนเงิน คชจ.ส่วนเกิน ADV. AP25030189 | 51,972.56 |
+|          |               | Business Unit: GFE = GFE, CASH FLOW: 1206 = ค่าใช้จ่ายทางตรงอื่น, PROJECT GL CODE: P06471 = Instrumentation เงื่อนไขเชิงไตรตอนล่าง PFO: 01E3142 |       |
+
+TOTALS
+
+128,808.11 128,808.11
+
+ภาษีซื้อ
+
+0.00
+
+ภาษีซื้อยังไม่ถึงกำหนด
+
+0.00
+
+NET PAID
+
+One Hundred Twenty Eight Thousand Eight Hundred Eight and 11/100
+
+128,808.11

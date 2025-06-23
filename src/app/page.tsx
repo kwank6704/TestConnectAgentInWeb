@@ -34,6 +34,26 @@ export default function Dashboard() {
       path: '/libs/ocr3',
     },
     {
+      label: 'MILES CHECK by typhoon พอรู้เรื่องแค่ไมล์เลจ',
+      icon: <DocumentMagnifyingGlassIcon className="h-5 w-5" />,
+      path: '/libs/milescheck',
+    },
+    {
+      label: 'lama โอเคสุด',
+      icon: <DocumentMagnifyingGlassIcon className="h-5 w-5" />,
+      path: '/libs/lama',
+    },
+    {
+      label: 'SumbyCode แย่มาก',
+      icon: <DocumentMagnifyingGlassIcon className="h-5 w-5" />,
+      path: '/libs/byCode',
+    },
+    {
+      label: 'deepseek รับได้แต่ข้อความใช้ไม่ได้',
+      icon: <DocumentMagnifyingGlassIcon className="h-5 w-5" />,
+      path: '/libs/deepseek',
+    },
+    {
       label: 'Settings',
       icon: <Cog6ToothIcon className="h-5 w-5" />,
       path: '/libs/settings',

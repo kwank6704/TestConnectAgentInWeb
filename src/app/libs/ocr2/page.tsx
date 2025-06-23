@@ -1,6 +1,6 @@
 'use client';
 
-import OCR2 from "@/components/OCR2";
+import OCR2 from "@/components/OCRtesseract";
 
 export default function OCRPage2() {
   return (

@@ -27,10 +27,17 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             `RAW_TEXT_START\n${base_text}\nRAW_TEXT_END`
         ),
         "mileage_only": (base_text: string) => (
-            `Below is an image of a car dashboard.\n` +
-            `Your task is to extract and return only the odometer reading (mileage) from the image.\n` +
-            `Return just the number shown next to the label "ODO", in kilometers.\n` +
-            `The final output must be in JSON format with a single key \`natural_text\`.\n` +
+            `Below is an image of a document page along with its dimensions. ` +
+            `Extract and return only the odometer number (ODO) found in the image. Do not include any other text or explanation.\n` +
+            `If the document contains images, use a placeholder like dummy.png for each image.\n` +
+            `Your final output must be in JSON format with a single key \`natural_text\` containing the response.\n` +
+            `RAW_TEXT_START\n${base_text}\nRAW_TEXT_END`
+        ),
+        "summary": (base_text: string) => (
+            `Below is an image of a document page along with its dimensions. ` +
+            `Extract and summarize only the key financial figures from the document such as total revenue, total expenses, net profit/loss, or any clearly indicated summary amounts. `+
+            `If the document contains images, use a placeholder like dummy.png for each image.\n` +
+            `Your final output must be in JSON format with a single key \`natural_text\` containing the response.\n` +
             `RAW_TEXT_START\n${base_text}\nRAW_TEXT_END`
         ),
     };
