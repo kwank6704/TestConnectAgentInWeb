@@ -1,12 +1,11 @@
 'use client';
 
-import ChatGptBox from "@/components/TestChatgpt";
+import ChatGpt from "@/components/TestChatgpt";
 
 export default function OpenAi() {
   return (
     <main className="min-h-screen ">
-        "check checkkk"
-      <ChatGptBox/>
+      <ChatGpt/>
     </main>
   )}
   ;
