@@ -15,7 +15,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       model: "gpt-4",
       messages: req.body.messages,
       temperature: 1,
-      max_tokens: 50000,
+      max_tokens: 5839,
       top_p: 1,
     });
 
