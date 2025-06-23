@@ -53,6 +53,11 @@ export default function Dashboard() {
       icon: <DocumentMagnifyingGlassIcon className="h-5 w-5" />,
       path: '/libs/deepseek',
     },
+        {
+      label: 'Test Chatgpt API',
+      icon: <DocumentMagnifyingGlassIcon className="h-5 w-5" />,
+      path: '/libs/TestChatgpt',
+    },
     {
       label: 'ocrMIlesChatGPT',
       icon: <DocumentMagnifyingGlassIcon className="h-5 w-5" />,
