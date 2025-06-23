@@ -12,15 +12,19 @@
     "@google/genai": "^1.1.0",
     "@heroicons/react": "^2.2.0",
     "formidable": "^3.5.4",
+    "mammoth": "^1.9.1",
     "next": "14.2.5",
     "openai": "^4.103.0",
+    "pdf-parse": "^1.1.1",
     "python-shell": "^5.0.0",
     "react": "^18",
     "react-dom": "^18",
-    "tesseract.js": "^6.0.1"
+    "tesseract.js": "^6.0.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/pdf-parse": "^1.1.5",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.21",

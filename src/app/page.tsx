@@ -54,10 +54,16 @@ export default function Dashboard() {
       path: '/libs/deepseek',
     },
     {
+      label: 'ocrMIlesChatGPT',
+      icon: <DocumentMagnifyingGlassIcon className="h-5 w-5" />,
+      path: '/libs/ocrMIlesChatGPT',
+    },
+    {
       label: 'Settings',
       icon: <Cog6ToothIcon className="h-5 w-5" />,
       path: '/libs/settings',
     },
+    
   ];
 
   return (
